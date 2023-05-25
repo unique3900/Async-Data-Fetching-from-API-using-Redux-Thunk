@@ -4,10 +4,10 @@ import axios from "axios";
 
 
 
-const fetchData = createAsyncThunk("fetchImageAPI", async () => {
-    const response = await axios.get("https://jsonplaceholder.typicode.com/photos");
+export const fetchData = createAsyncThunk("fetchImageAPI", async () => {
+    const response = await fetch("https://jsonplaceholder.typicode.com/photos");
     console.log(response);
-    return response;
+    return response.json();
 });
 
 const imageSlice = createSlice({

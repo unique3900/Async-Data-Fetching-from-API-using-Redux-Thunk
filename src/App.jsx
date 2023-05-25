@@ -1,9 +1,10 @@
 import React from 'react'
+import HomePage from './Component/HomePage'
 
 const App = () => {
   return (
     <div>
-      <h1>Hye</h1>
+      <HomePage/>
     </div>
   )
 }
